@@ -9,3 +9,11 @@ Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	128 obs. of  2 variables:
  ploting the data
 ggplot(arivals,aes(x=Date,y=arivals$`Number of arrivals`))+geom_point()
 ![rplot](https://user-images.githubusercontent.com/24644939/27676282-fcc16b2a-5cca-11e7-9473-c7b89c8180d2.png)
+
+converting normal data to time series data using ts()
+### ts_arival=ts(arivals$`Number of arrivals`,start = c(1993,1),frequency = 12)
+> checking the time series data using 
+is.ts(ts_arival) it gives the "TRUE " if it is time series data
+
+### ploting Time series data
+
